@@ -1,12 +1,23 @@
-// import { Routes, Route } from 'react-router-dom';
-// import { useState } from 'react';
-
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  // const [count, setCount] = useState(0);
+import Navigation from './components/Navigation/Navigation';
+import { lazy, Suspense } from 'react';
 
-  return <></>;
+// const MovieCast = lazy(() => import('./components/MovieCast/MovieCast'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
+
+function App() {
+  return (
+    <>
+      <Navigation />
+      <Suspense>
+        <Routes>
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+    </>
+  );
 }
 
 export default App;

@@ -4,9 +4,9 @@ const Loader = () => {
     <Circles
       height="80"
       width="80"
-      color="#4fa94d"
+      color="#2131e1"
       ariaLabel="circles-loading"
-      wrapperStyle={{}}
+      wrapperStyle={{ justifyContent: 'center' }}
       wrapperClass=""
       visible={true}
     />

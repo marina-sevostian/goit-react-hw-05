@@ -1,0 +1,31 @@
+.reviewCard {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+}
+
+.avatar {
+  flex-shrink: 0;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #0f1590;
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.descr:not(:last-child) {
+  margin-bottom: 7px;
+}
